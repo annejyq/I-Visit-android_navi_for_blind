@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feedback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/textvisit"
+    tools:context="com.example.anne.testvisit.Feedback">
+
+    <Button
+        android:text="Blind Friendly"
+        android:layout_width="300sp"
+        android:layout_height="150sp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/friendlyquestion"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp" />
+
+    <Button
+        android:text="Companionship Recommend"
+        android:layout_width="300sp"
+        android:layout_height="150sp"
+        android:layout_marginTop="33dp"
+        android:id="@+id/companyquestion"
+        android:textSize="24sp"
+        android:layout_below="@+id/friendlyquestion"
+        android:layout_alignStart="@+id/friendlyquestion" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/companyquestion"
+        android:layout_marginTop="37dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22dp"
+        android:id="@+id/missioncomplete" />
+
+</RelativeLayout>
